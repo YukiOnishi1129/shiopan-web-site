@@ -18,6 +18,16 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "warn"
+      },
+      "style": {
+        "noDefaultExport": "off",
+        "noNamespace": "warn",
+        "useConst": "warn",
+        "useImportType": "warn"
+      },
       "suspicious": {
         "noUnknownAtRules": "off"
       }
@@ -30,7 +40,29 @@
   "assist": {
     "actions": {
       "source": {
-        "organizeImports": "on"
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              [
+                {
+                  "source": [":NODE:", ":PACKAGE:", ":PACKAGE_WITH_PROTOCOL:"]
+                }
+              ],
+              [
+                {
+                  "source": [":ALIAS:"]
+                }
+              ],
+              [
+                {
+                  "source": [":PATH:"]
+                }
+              ]
+            ],
+            "identifierOrder": "lexicographic"
+          }
+        }
       }
     }
   }

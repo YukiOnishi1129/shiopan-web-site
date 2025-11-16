@@ -1,3 +1,3 @@
 export default function PrivacyPage() {
-	return <div></div>
+  return <div></div>;
 }
