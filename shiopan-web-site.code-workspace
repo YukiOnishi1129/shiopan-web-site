@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "🌍 ROOT",
+			"path": "./",
+		},
+		{
+			"name": "☁️ WEB_CLIENT",
+			"path": "./web/client",
+		}
+	]
+}
