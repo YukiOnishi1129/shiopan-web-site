@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "合同会社ShioPan | 心あたたまるクリエイティブスタジオ",
   description:
     "合同会社ShioPanの公式サイト。イラスト制作やSNSデザイン、コンテンツ支援をあたたかな世界観でお届けします。",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
